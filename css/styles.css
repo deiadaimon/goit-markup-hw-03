@@ -38,6 +38,10 @@ h3 {
   letter-spacing: 0.02em;
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -47,13 +51,11 @@ h3 {
   color: var(--ocean);
 }
 
-.container {
+.head-container {
+  display: flex;
   width: 1158px;
   margin: 0 auto;
-}
-
-.section {
-  padding: 120px 0;
+  padding: 0 15px;
 }
 
 /* logo styles */
@@ -66,6 +68,7 @@ h3 {
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-right: 76px;
 }
 
 .logo-dark {
@@ -82,6 +85,16 @@ h3 {
   border-bottom: 1px solid var(--cornflower);
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-link {
   color: var(--navy-blue);
   font-size: 16px;
@@ -89,6 +102,7 @@ h3 {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .contacts {
@@ -107,6 +121,7 @@ h3 {
 /* main styles */
 .hero {
   background-color: var(--navy-blue);
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -117,6 +132,7 @@ h3 {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
 }
 
 .hero-btn {
