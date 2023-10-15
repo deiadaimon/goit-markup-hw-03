@@ -124,12 +124,13 @@ img {
 
 /* header styles */
 .header {
-  padding: 24px 156px;
+  padding: 24px 0;
   border-bottom: 1px solid var(--cornflower);
 }
 
 .flex {
   display: flex;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -149,7 +150,6 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0;
 }
 
 .contacts {
@@ -179,7 +179,9 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+
   max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .hero-btn {
@@ -192,11 +194,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+
   display: block;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -215,7 +219,6 @@ img {
 
 .feature-item {
   width: calc((100% - 3 * 24px) / 4);
-  /* width: calc((100% - 72px) / 4); */
 }
 
 .feature-name {
@@ -234,7 +237,7 @@ img {
 
 .team-card {
   background-color: var(--white);
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -261,9 +264,9 @@ img {
   column-gap: 24px;
   row-gap: 48px;
 }
+
 .project-card {
-  width: calc((100% - 48px) / 3);
-  border-bottom: 1px solid var(--cornflower);
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .project-item {
@@ -271,6 +274,7 @@ img {
   border: 1px solid var(--cornflower);
   border-top: none;
 }
+
 .project-name {
   margin-bottom: 8px;
 }
@@ -283,4 +287,5 @@ img {
 
 .footer-text {
   color: var(--cloud);
+  max-width: 264px;
 }
